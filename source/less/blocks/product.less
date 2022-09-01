@@ -1,0 +1,151 @@
+.product {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.product__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.product__item {
+  background: @base-background-color;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 29px;
+  }
+}
+
+.product__item:last-child {
+  margin-bottom: 0;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__picture {
+  min-height: 188px;
+  margin-bottom: 24px;
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    margin-bottom: 31px;
+  }
+}
+
+.product__image {
+  display: block;
+  width: 130px;
+  height: 188px;
+  margin: 0 auto;
+}
+
+.product__name {
+  margin: 0 auto 4px 20px;
+  font-size: 18px;
+  line-height: 32px;
+  color: @base-text-color;
+  width: 240px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.product__description {
+  margin: 0 0 16px 20px;
+  width: 235px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 275px;
+  }
+}
+
+.product__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.product__footer {
+  display: grid;
+  grid-template-columns: 1fr 141px;
+  align-items: center;
+  margin: 0 20px 0 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px 0 28px;
+  }
+}
+
+.product__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.product__order-button {
+  background: @marked-color;
+  border-radius: 4px;
+  border: none;
+  color: @base-background-color;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 20px 8px 46px;
+  position: relative;
+}
+
+.product__order-button:hover,
+.product__order-button:focus-visible {
+  background: @range-slider-color;
+}
+
+.product__order-button:active {
+  background: @color-type-four;
+}
+
+.product__order-icon {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.product__buy {
+  margin: 0;
+}

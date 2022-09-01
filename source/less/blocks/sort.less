@@ -1,0 +1,49 @@
+.sort {
+  display: grid;
+  grid-template-columns: 113px 1fr;
+  gap: 8px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    margin: 0 0 10px auto;
+    grid-template-columns: 115px 1fr;
+  }
+}
+
+.sort__title {
+  margin: 0;
+}
+
+.sort__select {
+  color: @marked-color;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  width: 160px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  /* stylelint-disable */
+-moz-appearance: none;
+-webkit-appearance: none;
+  /* stylelint-enable */
+}
+
+.sort__select:hover,
+.sort__select:focus-visible {
+  background: @color-type-one;
+}
+
+.sort__select-icon {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 12px;
+
+  @media (min-width: @tablet-width) {
+    right: 10px;
+  }
+}

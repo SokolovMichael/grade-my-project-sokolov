@@ -1,0 +1,116 @@
+.pagination {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: 395px;
+    margin-left: auto;
+  }
+}
+
+.pagination__button {
+  margin-right: 20px;
+  background: @base-background-color;
+  border-radius: 4px;
+  border: none;
+  color: @marked-color;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+}
+
+.pagination__button:last-child {
+  margin-right: 0;
+}
+
+.pagination__button--prev,
+.pagination__button--next {
+  padding: 8px 20px;
+}
+
+.pagination__button:hover,
+.pagination__button:focus-visible {
+  background: @range-slider-color;
+  color: @base-background-color;
+}
+
+.pagination__button:active {
+  background: @color-type-four;
+}
+
+.pagination__button-name {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.pagination__button-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  fill: @marked-color;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__button:hover .pagination__button-icon,
+.pagination__button:focus-visible .pagination__button-icon {
+  fill: @base-background-color;
+}
+
+.pagination__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__item {
+  width: 40px;
+  min-height: 40px;
+  margin-right: 20px;
+}
+
+.pagination__link {
+  display: block;
+  padding: 8px;
+  color: @marked-color;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  background: @base-background-color;
+}
+
+.pagination__item:hover .pagination__link,
+.pagination__item:focus-visible .pagination__link {
+  background: @range-slider-color;
+  color: @base-background-color;
+}
+
+.pagination__item:active .pagination__link {
+  background: @color-type-four;
+}
+
+.pagination__link--current {
+  background: transparent;
+  color: @base-text-color;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.pagination__item:hover .pagination__link--current,
+.pagination__item:focus-visible .pagination__link--current {
+  background: transparent;
+  color: @base-text-color;
+}
+
+.pagination__item:active .pagination__link--current {
+  background: transparent;
+}

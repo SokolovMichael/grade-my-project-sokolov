@@ -1,0 +1,54 @@
+/* stylelint-disable */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* stylelint-enable */
+
+
+.noUi-connect {
+  background: @range-slider-color;
+}
+
+.noUi-target {
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 100px;
+  box-shadow: none;
+  height: 2px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border-radius: 100%;
+  background: @base-background-color;
+  border: 2px solid @base-background-color;
+  outline: 2px solid @range-slider-color;
+  cursor: pointer;
+}
+
+.noUi-handle:active {
+  background: @marked-color;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  top: -8px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
+}

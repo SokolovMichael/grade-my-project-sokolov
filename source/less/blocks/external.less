@@ -1,0 +1,51 @@
+.external__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.external__item {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  position: relative;
+  display: block;
+  border: none;
+  border-radius: 4px;
+}
+
+.external__item:last-child {
+  margin-right: 0;
+}
+
+.external__link {
+  display: block;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.external__link-icon {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  fill: @color-type-two;
+}
+
+.external__item:hover,
+.external__item:focus-visible {
+  background: @color-type-one;
+}
+
+.external__item:active {
+  background: @blackout-color;
+}
+
+.external__item:hover .external__link-icon,
+.external__item:focus-visible .external__link-icon {
+  fill: @marked-color;
+}

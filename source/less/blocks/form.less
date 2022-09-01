@@ -1,0 +1,163 @@
+.form {
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
+  }
+}
+
+.form__filter-wrapper {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.form__fieldset {
+  padding: 0;
+  border: none;
+  margin: 0 0 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 1px;
+  }
+}
+
+.form__fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.form__fieldset--sort {
+  margin-bottom: 20px;
+}
+
+.form__title {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.form__title--list {
+  margin-bottom: 19px;
+}
+
+.form__slider {
+  margin: 0 0 34px 7px;
+}
+
+.form__inputs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (min-width: @desktop-width) {
+    gap: 50px;
+  }
+}
+
+.form__item--min {
+  position: relative;
+}
+
+.form__item--min::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  height: 2px;
+  width: 10px;
+  background: @color-type-two;
+
+  @media (min-width: @desktop-width) {
+    right: -30px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  box-sizing: border-box;
+  color: @base-text-color;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  border: 2px solid @range-slider-color;
+  border-radius: 4px;
+  padding: 6px 10px;
+  outline: none;
+}
+
+.form__input:focus-visible {
+  border: 2px solid @color-type-four;
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list-item {
+  margin-bottom: 20px;
+}
+
+.form__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.form__reset-button {
+  background: @base-background-color;
+  border-radius: 4px;
+  border: none;
+  color: @marked-color;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 222px;
+    margin: 0 auto 40px;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+.form__reset-button:hover,
+.form__reset-button:focus-visible {
+  background: @range-slider-color;
+  color: @base-background-color;
+}
+
+.form__reset-button:active {
+  background: @color-type-four;
+}

@@ -1,0 +1,122 @@
+.advantages {
+  text-align: center;
+  width: 280px;
+  margin: 0 auto 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 728px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1360px;
+    margin-bottom: 120px;
+  }
+}
+
+.advantages__title {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: @marked-color;
+  margin: 0 0 4px;
+}
+
+.advantages__reason {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 0;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+.advantages__icon {
+  height: 56px;
+  margin-bottom: 5px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__text {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.advantages__type {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__description br {
+  display: block;
+}

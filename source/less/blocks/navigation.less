@@ -1,0 +1,81 @@
+
+.navigation {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 223px 223px;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.navigation__wrapper {
+  border-bottom: 1px solid @color-type-one;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.navigation__information {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.navigation__title {
+  font-size: 14px;
+  line-height: 20px;
+  color: @marked-color;
+  margin: 0 0 17px;
+  letter-spacing: 0.25px;
+}
+
+.navigation__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.navigation__item {
+  min-height: 32px;
+  margin-bottom: 4px;
+}
+
+.navigation__item:last-child {
+  margin-bottom: 0;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: @base-text-color;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  letter-spacing: 0.2px;
+}
+
+.navigation__item:hover .navigation__link,
+.navigation__item:focus-visible .navigation__link {
+  color: @range-slider-color;
+}
+
+.navigation__item:active {
+  color: @color-type-four;
+}
